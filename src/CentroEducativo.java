@@ -27,6 +27,7 @@ public class CentroEducativo {
             edad = Integer.parseInt(edadT);
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "El dato de edad no es valido");
+            edad=-1;
         }
         while(edad>=0){
             edades+=edad;
@@ -41,11 +42,8 @@ public class CentroEducativo {
                 JOptionPane.showMessageDialog(null, "El dato de edad no es valido");
                 edad=-1;
             }
-
-
         }
         media=edades/alumnos;
         JOptionPane.showMessageDialog(null, "La media es " + media + "\nLa suma de todas las edades es  " + edades + "\nLos alumnos mayores de edad son " + mayorEdad + "\n El total de alumnos es " + alumnos);
-
     }
 }
